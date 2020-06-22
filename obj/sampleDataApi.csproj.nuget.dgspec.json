@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/vizamora/source/repos/sampleDataApi/sampleDataApi.csproj": {}
+  },
+  "projects": {
+    "/home/vizamora/source/repos/sampleDataApi/sampleDataApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/vizamora/source/repos/sampleDataApi/sampleDataApi.csproj",
+        "projectName": "sampleDataApi",
+        "projectPath": "/home/vizamora/source/repos/sampleDataApi/sampleDataApi.csproj",
+        "packagesPath": "/home/vizamora/.nuget/packages/",
+        "outputPath": "/home/vizamora/source/repos/sampleDataApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vizamora/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

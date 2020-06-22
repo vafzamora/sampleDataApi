@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/vizamora/.dotnet/store/|arch|/|tfm|",
+      "/home/vizamora/.nuget/packages"
+    ]
+  }
+}
