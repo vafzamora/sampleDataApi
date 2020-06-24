@@ -47,7 +47,6 @@ namespace sampleDataApi.Controllers
                     using (var albumsReader = comm2.ExecuteReader()){
                     while (albumsReader.Read())
                     {
-
                         
                         var cover =  await httpClient.GetByteArrayAsync(_imageUri); 
 
