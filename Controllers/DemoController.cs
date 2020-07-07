@@ -22,7 +22,6 @@ namespace sampleDataApi.Controllers
         private readonly IConfiguration _configuration;
 
         private static string filePath = "./wwwroot/images/cover.jpg";
-        static ArrayPool<byte> arrayPool = ArrayPool<byte>.Create(200000, 10);
 
         public DemoController(IConfiguration configuration, ILogger<DemoController> logger)
         {
@@ -62,7 +61,6 @@ namespace sampleDataApi.Controllers
             }
             return result;
         }
-
 
         [HttpGet("sample2")]
         public async Task<IEnumerable<string>> GetV2()
@@ -118,7 +116,7 @@ namespace sampleDataApi.Controllers
                         {
                             while (albumsReader.Read())
                             {
-                                var cover = arrayPool.Rent(196590);
+                                var cover = ArrayPool<byte>.Shared.Rent(196590);
 
                                 try
                                 {
@@ -132,7 +130,7 @@ namespace sampleDataApi.Controllers
                                 }
                                 finally
                                 {
-                                    arrayPool.Return(cover, false);
+                                    ArrayPool<byte>.Shared.Return(cover, false);
                                 }
 
                                 result.Add($"{artistsReader.GetString(1)}:{albumsReader.GetString(1)}");
